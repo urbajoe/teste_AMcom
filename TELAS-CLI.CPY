@@ -1,0 +1,47 @@
+﻿       SCREEN SECTION.
+       01 TELA-OPCAO.
+          02 BLANK SCREEN.
+          02 LINE 1 COL 1 VALUE "***************************************
+      -"************************************".
+          02 LINE 2 COL 21 VALUE "SISTEMA EXEMPLO - CLIENTES"
+      -.
+          02 LINE 3 COL 1 VALUE "***************************************
+      -"************************************".
+          02 LINE 4 COL 33 VALUE "SELECIONE A OPÇÃO".
+          02 LINE 7 COL 10 VALUE "[1] INCLUSÃO".
+          02 LINE 8 COL 10 VALUE "[2] ALTERACÃO".
+          02 LINE 9 COL 10 VALUE "[3] EXCLUSÃO".
+          02 LINE 10 COL 10 VALUE "[4] IMPORTAÇÃO".
+          02 LINE 11 COL 10 VALUE "[5] SAIR".
+          02 LINE 15 COL 10 "DIGITE A OPCAO DESEJADA[.]".
+          02 LINE 15 COL 34 PIC 9 USING WOPCAO AUTO.
+       
+       01 TELA-CLI.
+          02 BLANK SCREEN.
+          02 LINE 1 COL 1 VALUE "***************************************
+      -"************************************".
+          02 LINE 2 COL 21 VALUE "SISTEMA EXEMPLO - CLIENTES"
+      -.
+          02 LINE 3 COL 1 VALUE "***************************************
+      -"************************************".
+          02 LINE 4 COL 33 VALUE "CADASTRO DE CLIENTES".
+          02 LINE 7 COL 10 VALUE "Código Cliente.:".
+          02 LINE 8 COL 10 VALUE "CNPJ...........:".
+          02 LINE 9 COL 10 VALUE "Razão Social...:".
+          02 LINE 10 COL 10 VALUE "Latitude.......:".
+          02 LINE 11 COL 10 VALUE "Longitude......:".
+          02 LINE 08 COL 27 PIC  999.999.999.999.99 USING WCNPJ.
+          02 LINE 09 COL 27 PIC  X(040) USING WRAZAO.
+          02 LINE 10 COL 27 PIC S9(003)v9(008) USING WLATITUDE.
+          02 LINE 11 COL 27 PIC S9(003)v9(008) USING WLONGITUDE.
+
+       01 TELA-CODIGO.
+          02 LINE 07 COL 27 PIC  ZZZZZZZ USING WCODIGO.
+                       
+       01 TELA-MENSAGEM.
+          02 LINE 25 COL 10 VALUE "MENSAGEM.....:".
+          02 LINE 25 COL 27 PIC X(50) WMENSAGEM.
+
+       01 TELA-NOME-ARIMPORT.
+          02 LINE 26 COL 10 PIC  X(50) USING WID-ARQ-IMPORT-1.
+
