@@ -4,3 +4,9 @@ DEPOIS DE COMPILADOS OS PROGRAMAS COM EXTENSÃO .COB
 O SELETOR PRINCIPAL É O PROGRAMA MENU.COB
 OS PROGRAMAS POSSUEM A EXTENSÃO .COB
 OS COPY'S POSSUEM A EXTENSÃO .CPY
+
+----------------------------------------------------------------------
+Os Programas foram elaborados sem recurso de gerador de tela e relatorio.
+O padrão está em modo caractere.
+Os programas não foram compilados e somente passados por teste de mesa.
+-----------------------------------------------------------------------
